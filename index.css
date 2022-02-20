@@ -209,11 +209,14 @@ h2 {
 #experiencebody {
   color: rgb(34, 40, 49);
   background-color: rgb(34, 40, 49);
+  background-image: url(officebg.jpg);
+  background-size: cover;
 }
 #expheader {
   text-align: center;
   color: white;
   font-family: "Parisienne", cursive;
+  padding-top: 5vh;
 }
 #expheader h1 {
   font-size: 4rem !important;
