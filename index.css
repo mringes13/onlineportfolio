@@ -253,24 +253,6 @@ h2 {
   background: #fff;
   /* border: 5px solid white; */
 }
-/* #experience .row .tjx {
-  border-image: linear-gradient(45deg, #c31230, #d88996) 1;
-}
-#experience .row .wmc {
-  border-image: linear-gradient(45deg, #5a7935, #9eb187) 1;
-}
-#experience .row .cb {
-  border-image: linear-gradient(45deg, #b11f24, #c7989a) 1;
-}
-#experience .row .ibm {
-  border-image: linear-gradient(45deg, #1f70c1, #85a4c4) 1;
-}
-#experience .row .hp {
-  border-image: linear-gradient(45deg, #205dae, #778ead) 1;
-}
-#experience .row .ref {
-  border-image: linear-gradient(45deg, #c2002f, #b6808e) 1;
-} */
 #experience .row section::before {
   position: absolute;
   content: "";
@@ -306,11 +288,17 @@ h2 {
 #experience .row-2 section .icon {
   left: -60px;
 }
-#experience .row section .details,
-#experience .row section .bottom {
+#experience .row section .details {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+#experience .row section .bottom h6 {
+  margin-bottom: 0;
+}
+#experience .row section .bottom .bskills {
+  text-align: center;
+  margin-top: 0px;
 }
 #experience .row section .details .title {
   font-size: 22px;
@@ -392,6 +380,9 @@ h2 {
   }
   #experience .row section {
     width: 100%;
+  }
+  #experience .row section .bottom {
+    text-align: center;
   }
   #experience .center-line {
     left: 40px;
