@@ -246,31 +246,12 @@ h2 {
   justify-content: flex-end;
 }
 #experience .row section {
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
   width: calc(50% - 40px);
   padding: 20px;
   position: relative;
-  background: #fff;
-  /* border: 5px solid white; */
 }
-/* #experience .row .tjx {
-  border-image: linear-gradient(45deg, #c31230, #d88996) 1;
-}
-#experience .row .wmc {
-  border-image: linear-gradient(45deg, #5a7935, #9eb187) 1;
-}
-#experience .row .cb {
-  border-image: linear-gradient(45deg, #b11f24, #c7989a) 1;
-}
-#experience .row .ibm {
-  border-image: linear-gradient(45deg, #1f70c1, #85a4c4) 1;
-}
-#experience .row .hp {
-  border-image: linear-gradient(45deg, #205dae, #778ead) 1;
-}
-#experience .row .ref {
-  border-image: linear-gradient(45deg, #c2002f, #b6808e) 1;
-} */
 #experience .row section::before {
   position: absolute;
   content: "";
@@ -420,10 +401,8 @@ h2 {
   #experience .row section {
     text-align: center;
   }
-  #experience .row section p {
-    font-size: 13px;
-  }
 }
+
 @media screen and (min-width: 1024px) {
   #skillsets #icontag {
     width: 15%;
