@@ -20,6 +20,9 @@ h2 {
 #navigation a {
   color: #ffffff !important;
 }
+#navigation a:hover {
+  transform: translateY(-3px);
+}
 #footer {
   margin: auto;
   background-color: rgb(34, 40, 49);
@@ -74,7 +77,7 @@ h2 {
 /*  HOME-FEATURED  */
 /* ---------------- */
 #featured {
-  margin: 8vh auto 8vh;
+  margin: 12vh auto 17vh;
   text-align: center;
   color: rgb(34, 40, 49);
 }
@@ -332,9 +335,6 @@ h2 {
     font-size: 14px;
     margin: 0;
   }
-  #aboutme p {
-    width: 90%;
-  }
   #aboutme #aboutmeimage {
     max-width: 80%;
     margin: auto;
@@ -382,7 +382,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
   #experience .center-line,
   #experience .row section::before,
   #experience .row section .icon {
@@ -394,6 +394,9 @@ h2 {
   #experience .row section .details,
   #experience .row section .bottom {
     flex-direction: column;
+  }
+  #experience .row section h6 {
+    text-align: center;
   }
 }
 
