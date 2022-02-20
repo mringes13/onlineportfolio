@@ -77,7 +77,7 @@ h2 {
 /*  HOME-FEATURED  */
 /* ---------------- */
 #featured {
-  margin: 12vh auto 17vh;
+  margin: 6vh auto 6vh;
   text-align: center;
   color: rgb(34, 40, 49);
 }
@@ -139,7 +139,7 @@ h2 {
 /*  HOME-ABOUT ME  */
 /* ---------------- */
 #aboutme {
-  margin-top: 10vw;
+  margin-bottom: 10vw;
   background-color: rgb(34, 40, 49);
   color: #ffffff;
   text-align: center;
@@ -150,7 +150,7 @@ h2 {
 }
 #aboutme #aboutmeimage {
   display: inline-block;
-  margin-top: -125px;
+  margin-bottom: -125px;
   width: 25%;
   border-radius: 50%;
   border: 25px solid rgb(34, 40, 49);
@@ -172,7 +172,7 @@ h2 {
 /*  HOME-SKILL SET */
 /* --------------  */
 #skillsets {
-  padding: 5vh 0 2vh;
+  padding: 2vh 0 2vh;
   color: rgb(34, 40, 49);
   text-align: center;
 }
@@ -309,6 +309,7 @@ h2 {
 }
 #experience .row section p {
   margin: 10px 0 17px 0;
+  font-weight: 300;
 }
 #experience .row section .bottom a {
   text-decoration: none;
