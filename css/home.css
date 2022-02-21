@@ -175,7 +175,7 @@
     align-items: center;
   }
   #featured #featuredlarge a {
-    width: 75%;
+    width: 100%;
   }
   #featured #featuredlarge a .overlaytext {
     padding: 5px;
