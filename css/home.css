@@ -19,6 +19,7 @@
   color: red;
 }
 #altheader .row img {
+  display: inline-block;
   max-width: 25vw;
   max-height: 80vh;
   padding-top: 3vh;
@@ -47,7 +48,7 @@
 }
 #featured #featuredlarge {
   display: flex;
-  padding: 3vh;
+  padding: 0 3vh 3vh;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -97,7 +98,7 @@
 /*  HOME-ABOUT ME  */
 /* ---------------- */
 #aboutme {
-  margin-bottom: 10vw;
+  margin-bottom: 5vh;
   background-color: rgb(34, 40, 49);
   color: #ffffff;
   text-align: center;
@@ -108,8 +109,7 @@
 }
 #aboutme #aboutmeimage {
   display: inline-block;
-  margin-bottom: -125px;
-  width: 25%;
+  width: 20%;
   border-radius: 50%;
   border: 25px solid rgb(34, 40, 49);
   transition: 0.5s;
@@ -162,13 +162,17 @@
   color: black;
   font-weight: 700;
 }
-
+/************************/
+/***** SMALL SCREEN *****/
+/************************/
+@media screen and (max-width: 440px) {
+}
 /***********************/
-/*** MEDIUM SCREEN ***/
-/***********************/
+/**** MEDIUM 1 SCREEN ****/
+/************************/
 @media screen and (max-width: 678px) {
   #featured {
-    margin: 2vh auto 2vh;
+    margin: 4vh auto 4vh;
   }
   #featuredsmall {
     display: inline-block;
@@ -183,7 +187,7 @@
   }
   #aboutme #aboutmeimage {
     max-width: 80%;
-    margin: auto;
+    margin: 0 15px;
     width: 100px;
     border: 10px rgb(34, 40, 49);
   }
@@ -201,6 +205,36 @@
   }
   #skillsets #icontag #icon {
     margin: 5px;
+  }
+}
+/***********************/
+/*** MEDIUM 2 SCREEN ***/
+/***********************/
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.75rem;
+  }
+  #altheader .row {
+    height: 65vh;
+    text-align: center;
+  }
+  #altheader .row div {
+    text-shadow: #fff 0px 0px 20px;
+  }
+  #altheader .row img {
+    display: none;
+  }
+  #featured {
+    margin: 3vh auto 3vh;
+  }
+  #featured #featuredlarge a .overlaytext {
+    font-size: 1rem;
   }
 }
 
