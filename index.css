@@ -35,43 +35,29 @@ h2 {
 /* ---------------- */
 /*  HOME-HEADER  */
 /* ---------------- */
-#homeheader {
-  background-image: url("homebg3.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
+#altheader .row {
+  margin: auto 0;
+  justify-content: end;
   align-items: center;
-  justify-content: center;
-  min-height: 85vh;
-  max-width: none !important;
-  width: 100%;
+  background-image: url(homebg3.png);
+  background-size: cover;
 }
-#homeheaderoverlay {
-  position: absolute;
-  background: rgba(34, 40, 49, 0.3);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+#altheader .row div {
+  width: 40vw;
+  text-shadow: #fff 0px 0px 10px;
 }
-#homeheadertext {
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 2px rgb(34, 40, 49);
-  z-index: 2;
-  font-weight: 700;
+#altheader .row .intro h1 {
+  font-size: 3rem;
+  font-weight: 900;
 }
-#homeheadertext h2 {
-  font-family: "Parisienne", cursive;
-  font-size: 7rem !important;
+#altheader .row .intro h1 span {
+  color: red;
 }
-#homeheadertext h3 {
-  font-size: 1.75rem !important;
-}
-#homeheadertext br {
-  display: none;
+#altheader .row img {
+  width: 25vw;
+  padding-top: 3vh;
+  margin-right: 15vw;
+  filter: drop-shadow(10px 10px 20px rgb(34, 40, 49));
 }
 /* ---------------- */
 /*  HOME-FEATURED  */
@@ -110,31 +96,38 @@ h2 {
 #featuredlarge a .overlaytext {
   position: absolute;
   transform: translate(-50%, -50%);
+  display: inline-block;
+  color: rgb(34, 40, 49);
   top: 50%;
   left: 50%;
   width: 100%;
   font-size: 1.5rem;
-  font-weight: 300;
-  display: none;
+  font-weight: 700;
   transition: 0.5s;
-}
-#featuredlarge a:hover > .overlaytext {
-  display: inline-block;
-  transition: 0.5s;
-  color: rgb(34, 40, 49);
+  background-color: #fff;
+  padding: 10px;
 }
 #featuredlarge a img {
-  transition: 0.5s;
+  opacity: 0.9;
 }
 #featuredlarge a:hover > img {
   opacity: 0.1;
-  transition: 0.3s;
+}
+#featuredlarge a:hover > .overlaytext {
+  background: transparent;
+  padding: 0;
 }
 #featuredlarge #category {
   width: 100%;
   height: 100%;
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
+#featuredlarge #category2 {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+}
+
 /* ---------------- */
 /*  HOME-ABOUT ME  */
 /* ---------------- */
