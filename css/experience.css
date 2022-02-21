@@ -1,0 +1,167 @@
+/* --------------- */
+/*  EXPERIENCE TOP  */
+/* --------------  */
+#experiencebody {
+  color: rgb(34, 40, 49);
+  background-color: rgb(34, 40, 49);
+  background-image: url(../images/officebg.jpg);
+  background-size: cover;
+}
+#expheader {
+  text-align: center;
+  color: white;
+  padding-top: 5vh;
+}
+#expheader h1 {
+  font-size: 4rem !important;
+}
+/* --------------------- */
+/*  EXPERIENCE TIMELINE  */
+/* --------------------- */
+#experience {
+  position: relative;
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+#experience .center-line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#experience .row {
+  display: flex;
+  justify-content: flex-start;
+  opacity: 0;
+}
+#experience .row section {
+  border-radius: 10px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  /* border: 5px solid white; */
+}
+#experience .row section::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: rgba(255, 255, 255, 1);
+  top: 28px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+#experience .row-1 {
+  justify-content: flex-start;
+}
+#experience .row-2 {
+  justify-content: flex-end;
+}
+#experience .row-1 section::before {
+  right: -7px;
+}
+#experience .row-2 section::before {
+  left: -7px;
+}
+#experience .row-1 section .icon {
+  right: -60px;
+}
+#experience .row-2 section .icon {
+  left: -60px;
+}
+#experience .row section .icon {
+  position: absolute;
+  background: #fff;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgb(34, 40, 49);
+  top: 13px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.5);
+}
+#experience .row section .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#experience .row section .bottom h6 {
+  margin-bottom: 0;
+}
+#experience .row section .bottom .bskills {
+  text-align: center;
+  margin-top: 0px;
+}
+#experience .row section .details .title {
+  font-size: 22px;
+  font-weight: 600;
+}
+#experience .row section p {
+  margin: 10px 0 17px 0;
+  font-weight: 300;
+}
+#experience .row section .bottom a {
+  text-decoration: none;
+  background: rgb(34, 40, 49);
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+/***********************/
+/*** MEDIUM SCREEN ***/
+/***********************/
+@media screen and (max-width: 678px) {
+  #experience {
+    margin-top: 20px;
+  }
+  #experience .row {
+    margin: 30px 0 3px 60px;
+  }
+  #experience .row section {
+    width: 100%;
+  }
+  #experience .row section .bottom {
+    text-align: center;
+  }
+  #experience .center-line {
+    left: 40px;
+  }
+  #experience .row-1 section::before {
+    left: -7px;
+  }
+  #experience .row-1 section .icon {
+    left: -60px;
+  }
+}
+
+/***********************/
+/*** SMALLEST SCREEN ***/
+/***********************/
+@media screen and (max-width: 500px) {
+  #experience .center-line,
+  #experience .row section::before,
+  #experience .row section .icon {
+    display: none;
+  }
+  #experience .row {
+    margin: 10px 0;
+  }
+  #experience .row section .details,
+  #experience .row section .bottom {
+    flex-direction: column;
+  }
+  #experience .row section {
+    text-align: center;
+  }
+  #experience .row section p {
+    font-size: 13px;
+  }
+}

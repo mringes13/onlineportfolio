@@ -1,0 +1,29 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200 !important;
+}
+h2 {
+  font-family: "Fira Sans", sans-serif;
+}
+/* ---------------- */
+/*  ALL-NAVIGATION  */
+/* ---------------- */
+#navigation {
+  background-color: rgb(34, 40, 49);
+  text-align: center;
+}
+#navigation a {
+  color: #ffffff !important;
+}
+#navigation a:hover {
+  transform: translateY(-3px);
+}
+#footer {
+  margin: auto;
+  background-color: rgb(34, 40, 49);
+  text-align: center;
+  justify-content: center;
+}
+#footer a {
+  color: #ffffff !important;
+}

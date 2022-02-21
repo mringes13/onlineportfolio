@@ -1,0 +1,214 @@
+/* ---------------- */
+/*  HOME-HEADER  */
+/* ---------------- */
+#altheader .row {
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/homebg3.png);
+  background-size: cover;
+}
+#altheader .row div {
+  text-shadow: #fff 0px 0px 10px;
+}
+#altheader .row .intro h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+#altheader .row .intro h1 span {
+  color: red;
+}
+#altheader .row img {
+  max-width: 25vw;
+  max-height: 80vh;
+  padding-top: 3vh;
+  filter: drop-shadow(10px 10px 20px rgb(34, 40, 49));
+}
+/* ---------------- */
+/*  HOME-FEATURED  */
+/* ---------------- */
+#featured {
+  margin: 6vh auto 6vh;
+  text-align: center;
+  color: rgb(34, 40, 49);
+}
+#featured #featuredsmall .btn {
+  border: solid 0.5px rgb(34, 40, 49);
+  margin: 1vh auto;
+  width: 70%;
+}
+#featured #featuredsmall .btn:hover {
+  color: white;
+  border: solid 0.5px #ffffff;
+  background-color: rgb(34, 40, 49);
+}
+#featured #featuredsmall {
+  display: none;
+}
+#featured #featuredlarge {
+  display: flex;
+  padding: 3vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#featured #featuredlarge h3 {
+  margin-top: 1vh;
+}
+#featured #featuredlarge a {
+  width: 33%;
+  position: relative;
+}
+#featured #featuredlarge a .overlaytext {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  color: rgb(34, 40, 49);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: 0.5s;
+  background-color: #fff;
+  padding: 10px;
+}
+#featured #featuredlarge a img {
+  opacity: 0.9;
+}
+#featured #featuredlarge a:hover > img {
+  opacity: 0.1;
+}
+#featured #featuredlarge a:hover > .overlaytext {
+  background: transparent;
+  padding: 0;
+}
+#featured #featuredlarge #category {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+#featured #featuredlarge #category2 {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+}
+
+/* ---------------- */
+/*  HOME-ABOUT ME  */
+/* ---------------- */
+#aboutme {
+  margin-bottom: 10vw;
+  background-color: rgb(34, 40, 49);
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  font-size: 19px;
+  align-items: center;
+  padding: 30px;
+}
+#aboutme #aboutmeimage {
+  display: inline-block;
+  margin-bottom: -125px;
+  width: 25%;
+  border-radius: 50%;
+  border: 25px solid rgb(34, 40, 49);
+  transition: 0.5s;
+}
+#aboutme #aboutmeimage:hover {
+  border: 25px solid white;
+  transition: 0.5s;
+}
+#aboutme #aboutmetext {
+  width: 80%;
+  margin: 15px auto auto;
+}
+#aboutme #aboutmetext h3 {
+  font-weight: 300 !important;
+  margin: auto;
+}
+
+/* --------------- */
+/*  HOME-SKILL SET */
+/* --------------  */
+#skillsets {
+  padding: 2vh 0 2vh;
+  color: rgb(34, 40, 49);
+  text-align: center;
+}
+#skillsets #icontag {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  background-color: #fff;
+}
+#skillsets #icontag #icon {
+  border-radius: 50%;
+  padding: 15px;
+  margin: 15px;
+  border: 3px solid rgb(34, 40, 49);
+  width: 80%;
+}
+#skillsets #icontag .overlaytext {
+  width: 100%;
+  top: 45%;
+  position: absolute;
+  display: none;
+}
+#skillsets #icontag:hover > img {
+  visibility: hidden;
+}
+#skillsets #icontag:hover > p {
+  display: block;
+  color: black;
+  font-weight: 700;
+}
+
+/***********************/
+/*** MEDIUM SCREEN ***/
+/***********************/
+@media screen and (max-width: 678px) {
+  #featured {
+    margin: 2vh auto 2vh;
+  }
+  #featuredsmall {
+    display: inline-block;
+  }
+  #featuredlarge {
+    display: none;
+  }
+  #aboutme {
+    flex-direction: column;
+    font-size: 14px;
+    margin: 0;
+  }
+  #aboutme #aboutmeimage {
+    max-width: 80%;
+    margin: auto;
+    width: 100px;
+    border: 10px rgb(34, 40, 49);
+  }
+  #skillsets {
+    border: rgb(34, 40, 49) 3vh solid;
+  }
+  #skillsets p {
+    font-size: 14px;
+    margin-bottom: 0.5rem !important;
+  }
+  #skillsets #icontag {
+    display: inline-block;
+    margin: 5px;
+    width: 25%;
+  }
+  #skillsets #icontag #icon {
+    margin: 5px;
+  }
+}
+
+/***********************/
+/*** LARGEST SCREEN ***/
+/***********************/
+@media screen and (min-width: 1024px) {
+  #skillsets #icontag {
+    width: 15%;
+  }
+}
