@@ -11,12 +11,18 @@
 #altheader .row div {
   text-shadow: #fff 0px 0px 10px;
 }
-#altheader .row .intro h1 {
+#altheader .row div h1 #comma {
+  display: inline-block;
+}
+#altheader .row div h1 {
   font-size: 3rem;
   font-weight: 900;
 }
-#altheader .row .intro h1 span {
+#altheader .row div h1 span:first-of-type {
   color: red;
+}
+#altheader .row div h1 #small {
+  display: none;
 }
 #altheader .row img {
   display: inline-block;
@@ -32,19 +38,6 @@
   margin: 6vh auto 6vh;
   text-align: center;
   color: rgb(34, 40, 49);
-}
-#featured #featuredsmall .btn {
-  border: solid 0.5px rgb(34, 40, 49);
-  margin: 1vh auto;
-  width: 70%;
-}
-#featured #featuredsmall .btn:hover {
-  color: white;
-  border: solid 0.5px #ffffff;
-  background-color: rgb(34, 40, 49);
-}
-#featured #featuredsmall {
-  display: none;
 }
 #featured #featuredlarge {
   display: flex;
@@ -141,6 +134,14 @@
   width: 20%;
   background-color: #fff;
 }
+#skillsets #icontag:hover > img {
+  visibility: hidden;
+}
+#skillsets #icontag:hover > p {
+  display: block;
+  color: black;
+  font-weight: 700;
+}
 #skillsets #icontag #icon {
   border-radius: 50%;
   padding: 15px;
@@ -154,18 +155,13 @@
   position: absolute;
   display: none;
 }
-#skillsets #icontag:hover > img {
-  visibility: hidden;
-}
-#skillsets #icontag:hover > p {
-  display: block;
-  color: black;
-  font-weight: 700;
-}
 /************************/
 /***** SMALL SCREEN *****/
 /************************/
 @media screen and (max-width: 440px) {
+  #altheader .row div h1 #small {
+    display: inline;
+  }
 }
 /***********************/
 /**** MEDIUM 1 SCREEN ****/
@@ -174,11 +170,27 @@
   #featured {
     margin: 4vh auto 4vh;
   }
-  #featuredsmall {
-    display: inline-block;
+  #featured #featuredlarge {
+    flex-direction: column;
+    align-items: center;
   }
-  #featuredlarge {
-    display: none;
+  #featured #featuredlarge a {
+    width: 75%;
+  }
+  #featured #featuredlarge a .overlaytext {
+    padding: 5px;
+    width: auto;
+    border-radius: 10px;
+  }
+  #featured #featuredlarge img {
+    border-radius: 10px;
+  }
+  #featured #featuredlarge #category {
+    clip-path: none;
+  }
+  #featured #featuredlarge #category2 {
+    clip-path: none;
+    margin: 2vh auto;
   }
   #aboutme {
     flex-direction: column;
@@ -227,11 +239,17 @@
   #altheader .row div {
     text-shadow: #fff 0px 0px 20px;
   }
+  #altheader .row div h1 #comma {
+    display: none;
+  }
   #altheader .row img {
     display: none;
   }
   #featured {
     margin: 3vh auto 3vh;
+  }
+  #featured h2 {
+    font-size: 1.5rem;
   }
   #featured #featuredlarge a .overlaytext {
     font-size: 1rem;
