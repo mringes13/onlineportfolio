@@ -18,6 +18,12 @@ h2 {
 #navigation a:hover {
   transform: translateY(-3px);
 }
+#navigation .collapse {
+  justify-content: flex-end;
+}
+#navigation .collapse ul {
+  margin-right: 0 !important;
+}
 #footer {
   margin: auto;
   background-color: #22262a;
