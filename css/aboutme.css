@@ -5,7 +5,7 @@
   color: #22262a;
   background-image: url(../images/aboutme.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
 }
 #abtheader {
   font-family: "Fira Sans", sans-serif;
