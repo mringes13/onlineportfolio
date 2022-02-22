@@ -3,11 +3,11 @@
 /* EXPERIENCE HTML */
 var rowone = document.getElementsByClassName("row-1");
 var rowtwo = document.getElementsByClassName("row-2");
-beginonscroll(rowone[1], "animatefromrightfast");
-beginonscroll(rowone[2], "animatefromrightfast");
-beginonscroll(rowone[3], "animatefromrightfast");
-beginonscroll(rowtwo[1], "animatefromleftfast");
-beginonscroll(rowtwo[2], "animatefromleftfast");
+beginonscroll(rowone[1], "opacityup");
+beginonscroll(rowone[2], "opacityup");
+beginonscroll(rowone[3], "opacityup");
+beginonscroll(rowtwo[1], "opacityup");
+beginonscroll(rowtwo[2], "opacityup");
 
 
 function beginonscroll(){

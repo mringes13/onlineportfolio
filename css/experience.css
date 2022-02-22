@@ -35,7 +35,7 @@
 #experience .row {
   display: flex;
   justify-content: flex-start;
-  opacity: 0;
+  opacity: 0.2;
 }
 #experience .row section {
   border-radius: 10px;
@@ -43,7 +43,6 @@
   padding: 20px;
   position: relative;
   background: #fff;
-  /* border: 5px solid white; */
 }
 #experience .row section::before {
   position: absolute;

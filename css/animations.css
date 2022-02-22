@@ -81,3 +81,16 @@
     transform: scale(2.2);
   }
 }
+
+.opacityup {
+  -webkit-animation: opacityUp 0.5s ease-in-out forwards;
+  animation: opacityUp 0.5s ease-in-out forwards;
+}
+@keyframes opacityUp {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
