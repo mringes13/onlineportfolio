@@ -5,6 +5,10 @@
   -webkit-animation: moveInLeft 2s ease-in-out forwards;
   animation: moveInLeft 2s ease-in-out forwards;
 }
+.animatefromleftfast {
+  -webkit-animation: moveInLeft 0.5s ease-in-out forwards;
+  animation: moveInLeft 0.5s ease-in-out forwards;
+}
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -18,6 +22,10 @@
 .animatefromright {
   -webkit-animation: moveInRight 2s ease-in-out forwards;
   animation: moveInRight 2s ease-in-out forwards;
+}
+.animatefromrightfast {
+  -webkit-animation: moveInRight 0.5s ease-in-out forwards;
+  animation: moveInRight 0.5s ease-in-out forwards;
 }
 @keyframes moveInRight {
   0% {

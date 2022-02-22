@@ -5,11 +5,13 @@
   margin: auto 0;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/homebg3.png);
+  background-image: url(../images/computer.jpg);
   background-size: cover;
+  background-position: center;
+  height: 95vh;
 }
 #altheader .row div {
-  text-shadow: #fff 0px 0px 10px;
+  color: #fff;
 }
 #altheader .row div h1 #comma {
   display: inline-block;
@@ -19,17 +21,14 @@
   font-weight: 900;
 }
 #altheader .row div h1 span:first-of-type {
-  color: red;
-}
-#altheader .row div h1 #small {
-  display: none;
+  color: #fda4ba;
 }
 #altheader .row img {
-  display: inline-block;
+  display: none;
   max-width: 25vw;
   max-height: 80vh;
   padding-top: 3vh;
-  filter: drop-shadow(10px 10px 20px rgb(34, 40, 49));
+  filter: drop-shadow(10px 10px 20px #22262a);
 }
 /* ---------------- */
 /*  HOME-FEATURED  */
@@ -37,7 +36,7 @@
 #featured {
   margin: 6vh auto 6vh;
   text-align: center;
-  color: rgb(34, 40, 49);
+  color: #22262a;
 }
 #featured #featuredlarge {
   display: flex;
@@ -56,7 +55,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   display: inline-block;
-  color: rgb(34, 40, 49);
+  color: #22262a;
   top: 50%;
   left: 50%;
   width: 100%;
@@ -92,7 +91,7 @@
 /* ---------------- */
 #aboutme {
   margin-bottom: 5vh;
-  background-color: rgb(34, 40, 49);
+  background-color: #22262a;
   color: #ffffff;
   text-align: center;
   justify-content: center;
@@ -104,7 +103,7 @@
   display: inline-block;
   width: 20%;
   border-radius: 50%;
-  border: 25px solid rgb(34, 40, 49);
+  border: 25px solid #22262a;
   transition: 0.5s;
 }
 #aboutme #aboutmeimage:hover {
@@ -125,7 +124,7 @@
 /* --------------  */
 #skillsets {
   padding: 2vh 0 2vh;
-  color: rgb(34, 40, 49);
+  color: #22262a;
   text-align: center;
 }
 #skillsets #icontag {
@@ -146,7 +145,7 @@
   border-radius: 50%;
   padding: 15px;
   margin: 15px;
-  border: 3px solid rgb(34, 40, 49);
+  border: 3px solid #22262a;
   width: 80%;
 }
 #skillsets #icontag .overlaytext {
@@ -159,9 +158,6 @@
 /***** SMALL SCREEN *****/
 /************************/
 @media screen and (max-width: 440px) {
-  #altheader .row div h1 #small {
-    display: inline;
-  }
 }
 /***********************/
 /**** MEDIUM 1 SCREEN ****/
@@ -201,10 +197,10 @@
     max-width: 80%;
     margin: 0 15px;
     width: 100px;
-    border: 10px rgb(34, 40, 49);
+    border: 10px #22262a;
   }
   #skillsets {
-    border: rgb(34, 40, 49) 3vh solid;
+    border: #22262a 3vh solid;
   }
   #skillsets p {
     font-size: 14px;

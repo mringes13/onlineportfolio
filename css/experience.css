@@ -2,9 +2,9 @@
 /*  EXPERIENCE TOP  */
 /* --------------  */
 #experiencebody {
-  color: rgb(34, 40, 49);
-  background-color: rgb(34, 40, 49);
-  background-image: url(../images/officebg.jpg);
+  color: #22262a;
+  background-color: #22262a;
+  background-image: url(../images/officebg2.jpg);
   background-size: cover;
 }
 #expheader {
@@ -82,7 +82,7 @@
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: rgb(34, 40, 49);
+  color: #22262a;
   top: 13px;
   box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.5);
@@ -109,7 +109,7 @@
 }
 #experience .row section .bottom a {
   text-decoration: none;
-  background: rgb(34, 40, 49);
+  background: #22262a;
   color: #fff;
   padding: 7px 15px;
   border-radius: 5px;
