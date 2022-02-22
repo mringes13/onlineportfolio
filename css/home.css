@@ -30,6 +30,9 @@
   padding-top: 3vh;
   filter: drop-shadow(10px 10px 20px #22262a);
 }
+#altheader .row .intro h2 {
+  margin-bottom: 15px;
+}
 /* ---------------- */
 /*  HOME-FEATURED  */
 /* ---------------- */

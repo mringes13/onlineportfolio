@@ -1,14 +1,14 @@
 /* ---------------- */
 /*  ABOUT ME HEADER */
 /* ---------------- */
-#aboutme {
+#main {
   color: #fff;
   background-color: rgb(74, 79, 75);
   display: flex;
   align-items: stretch;
   min-height: 90vh;
 }
-#aboutme #aboutmeimage {
+#main #aboutmeimage {
   min-width: 55vw;
   overflow: hidden;
   background-size: cover;
@@ -16,50 +16,55 @@
   background-image: url("../images/profile2.jpg");
   background-repeat: no-repeat;
 }
-#aboutme #aboutmetext {
+#main #aboutmetext {
   min-width: 45vw;
   padding: 3vw 5vw 5vw 4vw;
 }
-#aboutme #aboutmetext h2 {
+#main #aboutmetext h2 {
   margin-bottom: 0px;
 }
-#aboutme #aboutmetext #hashtags {
+#main #aboutmetext #hashtags {
   color: lightgrey;
 }
-#aboutme #aboutmetext #summary {
+#main #aboutmetext #summary {
   display: flex;
   margin-bottom: 20px;
 }
-#aboutme #aboutmetext #summary div {
+#main #aboutmetext #summary div {
   margin: 10px;
 }
-#aboutme #aboutmetext #summary #work {
+#main #aboutmetext #summary #work {
   margin-left: 0px;
 }
-#aboutme #aboutmetext #summary div h5 {
+#main #aboutmetext #summary div h5 {
   font-weight: 500;
   margin-bottom: 3px;
 }
-#aboutme #aboutmetext #summary div h6 {
+#main #aboutmetext #summary div h6 {
   font-weight: 300;
   margin-bottom: 2px;
   text-decoration: underline;
 }
-#aboutme #aboutmetext #summary div p {
+#main #aboutmetext #summary div p {
   margin-bottom: 0px;
   font-size: 0.8em;
 }
-#aboutme #aboutmetext #contacticons {
+#main #aboutmetext #contacticons {
   display: flex;
 }
-#aboutme #aboutmetext #contacticons img {
+#main #aboutmetext #contacticons img {
   width: 40px;
   margin: 0px 10px;
 }
-#aboutme #aboutmetext #contacticons #first {
+#main #aboutmetext #contacticons #first {
   margin-left: 0px;
 }
-
+#skills {
+  background-color: rgb(74, 79, 75);
+  color: #fff;
+  padding: 4vh;
+  text-align: center;
+}
 /* ---------------- */
 /*  ABOUT ME BODY  */
 /* ---------------- */

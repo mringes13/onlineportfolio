@@ -19,10 +19,13 @@ h2 {
   transform: translateY(-3px);
 }
 #navigation .collapse {
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 #navigation .collapse ul {
   margin-right: 0 !important;
+}
+#navigation .date {
+  color: white;
 }
 #footer {
   margin: auto;
