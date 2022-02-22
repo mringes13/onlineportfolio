@@ -1,12 +1,12 @@
 /* ---------------- */
 /*  ABOUT ME HEADER */
 /* ---------------- */
-
 #aboutme {
   color: #fff;
   background-color: rgb(74, 79, 75);
   display: flex;
   align-items: stretch;
+  min-height: 90vh;
 }
 #aboutme #aboutmeimage {
   min-width: 55vw;
@@ -18,7 +18,7 @@
 }
 #aboutme #aboutmetext {
   min-width: 45vw;
-  padding: 5vw 5vw 5vw 4vw;
+  padding: 3vw 5vw 5vw 4vw;
 }
 #aboutme #aboutmetext h2 {
   margin-bottom: 0px;
