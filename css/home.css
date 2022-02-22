@@ -154,11 +154,7 @@
   position: absolute;
   display: none;
 }
-/************************/
-/***** SMALL SCREEN *****/
-/************************/
-@media screen and (max-width: 440px) {
-}
+
 /***********************/
 /**** MEDIUM 1 SCREEN ****/
 /************************/
@@ -171,10 +167,13 @@
     align-items: center;
   }
   #featured #featuredlarge a {
-    width: 100%;
+    width: 65%;
+  }
+  #featured #featuredlarge a img {
+    opacity: 0.5;
   }
   #featured #featuredlarge a .overlaytext {
-    padding: 5px;
+    padding: 15px;
     width: auto;
     border-radius: 10px;
   }
@@ -246,9 +245,17 @@
   }
   #featured #featuredlarge a .overlaytext {
     font-size: 1rem;
+    width: 65%;
   }
 }
-
+/************************/
+/***** SMALL SCREEN *****/
+/************************/
+@media screen and (max-width: 440px) {
+  #featured #featuredlarge a .overlaytext {
+    font-size: 0.75rem;
+  }
+}
 /***********************/
 /*** LARGEST SCREEN ***/
 /***********************/
