@@ -4,13 +4,14 @@
 #experiencebody {
   color: #22262a;
   background-color: #22262a;
-  background-image: url(../images/officebg2.jpg);
+  background-image: url(../images/experience.jpg);
   background-size: cover;
+  background-position: center;
 }
 #expheader {
   text-align: center;
-  color: white;
   padding-top: 5vh;
+  font-family: "Fira Sans", sans-serif;
 }
 #expheader h1 {
   font-size: 4rem !important;
