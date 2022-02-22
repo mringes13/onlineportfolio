@@ -7,14 +7,6 @@
   background-size: cover;
   background-position: top;
 }
-#abtheader {
-  font-family: "Fira Sans", sans-serif;
-  text-align: center;
-  padding-top: 5vh;
-}
-#abtheader h1 {
-  font-size: 4rem !important;
-}
 
 /* ---------------- */
 /*  ABOUT ME BODY  */
@@ -26,17 +18,7 @@
   align-items: center;
   padding: 0px 30px 30px;
 }
-#aboutme #aboutmeimage {
-  display: inline-block;
-  width: 20%;
-  border-radius: 50%;
-  border: 25px solid #22262a;
-  transition: 0.5s;
-}
-#aboutme #aboutmeimage:hover {
-  border: 25px solid white;
-  transition: 0.5s;
-}
+
 #aboutme #aboutmetext {
   width: 80%;
   margin: 10px auto auto;
