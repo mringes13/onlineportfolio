@@ -1,50 +1,36 @@
 /* ---------------- */
 /*  ABOUT ME HEADER */
 /* ---------------- */
-#abtme {
+
+#aboutme {
   color: #22262a;
-  background-image: url(../images/aboutme.jpg);
+  /* background-image: url(../images/aboutme.jpg); */
   background-size: cover;
+  display: flex;
+  align-items: stretch;
+  min-height: 90vh;
+}
+#aboutme #aboutmeimage {
+  min-width: 55vw;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/profile2.jpg");
+  background-repeat: no-repeat;
+}
+#aboutme #aboutmetext {
+  min-width: 45vw;
+  padding: 5vw;
 }
 
 /* ---------------- */
 /*  ABOUT ME BODY  */
 /* ---------------- */
-#aboutme {
-  text-align: center;
-  justify-content: center;
-  font-size: 19px;
-  align-items: center;
-  padding: 0px 30px 30px;
-}
-
-#aboutme #aboutmetext {
-  width: 80%;
-  margin: 10px auto auto;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-}
-#aboutme #aboutmetext h3 {
-  font-weight: 300 !important;
-  margin: auto;
-}
 
 /***********************/
 /**** MEDIUM 1 SCREEN ****/
 /************************/
 @media screen and (max-width: 678px) {
-  #aboutme {
-    flex-direction: column;
-    font-size: 14px;
-    margin: 0;
-  }
-  #aboutme #aboutmeimage {
-    max-width: 80%;
-    margin: 0 15px;
-    width: 100px;
-    border: 10px #22262a;
-  }
 }
 /***********************/
 /*** MEDIUM 2 SCREEN ***/
