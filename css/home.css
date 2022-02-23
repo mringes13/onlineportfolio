@@ -88,76 +88,36 @@
   height: 100%;
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
 }
-
-/* ---------------- */
-/*  HOME-ABOUT ME  */
-/* ---------------- */
-#aboutme {
-  margin-bottom: 5vh;
+#contactme {
   background-color: #22262a;
-  color: #ffffff;
   text-align: center;
+  padding: 5vh 5vh 3vh 5vh;
+  color: #fff;
+}
+#contactme #contactoptions {
+  display: flex;
   justify-content: center;
-  font-size: 19px;
-  align-items: center;
-  padding: 30px;
 }
-#aboutme #aboutmeimage {
-  display: inline-block;
-  width: 20%;
+#contactme #contactoptions .contacticon {
+  padding: 3vw;
+}
+#contactme #contactoptions .contacticon i {
+  padding: 25px;
   border-radius: 50%;
-  border: 25px solid #22262a;
-  transition: 0.5s;
-}
-#aboutme #aboutmeimage:hover {
-  border: 25px solid white;
-  transition: 0.5s;
-}
-#aboutme #aboutmetext {
-  width: 80%;
-  margin: 15px auto auto;
-}
-#aboutme #aboutmetext h3 {
-  font-weight: 300 !important;
-  margin: auto;
-}
-
-/* --------------- */
-/*  HOME-SKILL SET */
-/* --------------  */
-#skillsets {
-  padding: 2vh 0 2vh;
-  color: #22262a;
-  text-align: center;
-}
-#skillsets #icontag {
-  display: inline-block;
-  position: relative;
-  width: 20%;
   background-color: #fff;
+  color: #22262a;
+  margin-bottom: 15px;
 }
-#skillsets #icontag:hover > img {
-  visibility: hidden;
+#contactme #contactoptions .contacticon p {
+  margin-bottom: 2px;
 }
-#skillsets #icontag:hover > p {
-  display: block;
-  color: black;
-  font-weight: 700;
+#contactme #contactoptions .contacticon a {
+  color: #fff;
+  margin-bottom: 5px;
 }
-#skillsets #icontag #icon {
-  border-radius: 50%;
-  padding: 15px;
-  margin: 15px;
-  border: 3px solid #22262a;
-  width: 80%;
+#contactme #contactoptions .contacticon .value {
+  font-weight: 200;
 }
-#skillsets #icontag .overlaytext {
-  width: 100%;
-  top: 45%;
-  position: absolute;
-  display: none;
-}
-
 /***********************/
 /**** MEDIUM 1 SCREEN ****/
 /************************/
@@ -189,32 +149,6 @@
   #featured #featuredlarge #category2 {
     clip-path: none;
     margin: 2vh auto;
-  }
-  #aboutme {
-    flex-direction: column;
-    font-size: 14px;
-    margin: 0;
-  }
-  #aboutme #aboutmeimage {
-    max-width: 80%;
-    margin: 0 15px;
-    width: 100px;
-    border: 10px #22262a;
-  }
-  #skillsets {
-    border: #22262a 3vh solid;
-  }
-  #skillsets p {
-    font-size: 14px;
-    margin-bottom: 0.5rem !important;
-  }
-  #skillsets #icontag {
-    display: inline-block;
-    margin: 5px;
-    width: 25%;
-  }
-  #skillsets #icontag #icon {
-    margin: 5px;
   }
 }
 /***********************/
@@ -263,7 +197,4 @@
 /*** LARGEST SCREEN ***/
 /***********************/
 @media screen and (min-width: 1024px) {
-  #skillsets #icontag {
-    width: 15%;
-  }
 }
