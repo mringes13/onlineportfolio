@@ -130,7 +130,7 @@
     align-items: center;
   }
   #featured #featuredlarge a {
-    width: 65%;
+    width: 100%;
   }
   #featured #featuredlarge a img {
     opacity: 0.5;
@@ -150,6 +150,14 @@
     clip-path: none;
     margin: 2vh auto;
   }
+  #contactme #contactoptions {
+    flex-direction: column;
+  }
+  #contactme #contactoptions #linkedin,
+  #contactme #contactoptions #github,
+  #contactme #contactoptions #facebook {
+    display: none;
+  }
 }
 /***********************/
 /*** MEDIUM 2 SCREEN ***/
@@ -162,7 +170,7 @@
     font-size: 1rem;
   }
   h3 {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   #altheader .row {
     height: 65vh;
@@ -183,6 +191,9 @@
   #featured #featuredlarge a .overlaytext {
     font-size: 1rem;
     width: 65%;
+  }
+  #contactme #contactoptions .contacticon {
+    font-size: 0.75em;
   }
 }
 /************************/
