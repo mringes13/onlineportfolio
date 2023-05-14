@@ -1,3 +1,9 @@
+/* eerie black: #22262A */
+/* amaranth pink: #FDA4BA */
+/* vista blue: #8093F1 */
+/* sky blue: #72DDF7 */
+/* beige: #EFEFD0 */
+
 /* ---------------- */
 /*  HOME-HEADER  */
 /* ---------------- */
@@ -85,40 +91,87 @@
   height: 100%;
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
 }
-#contactme {
-  background-color: #22262a;
-  text-align: center;
-  padding: 5vh 5vh 3vh 5vh;
-  color: #fff;
-}
-#contactme #contactoptions {
+
+#contactAndTest {
   display: flex;
+  justify-content: space-between;
+  background-color: #22262a;
+  padding: 5vh 5vh 3vh 5vh;
+}
+#contactAndTest #contactme {
+  width: 35%;
+  text-align: left;
+  color: #fff;
+  padding-left: 5vh;
+  padding-top: 3vh;
+}
+#contactAndTest #contactme h2 {
+  margin-bottom: 2vh;
+}
+#contactAndTest #contactme #contactoptions {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
 }
-#contactme #contactoptions .contacticon {
-  padding: 3vw;
-}
-#contactme #contactoptions .contacticon i {
-  padding: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #22262a;
+#contactAndTest #contactme #contactoptions .contact {
   margin-bottom: 15px;
 }
-#contactme #contactoptions .contacticon p {
-  margin-bottom: 2px;
-  color: white;
-}
-#contactme #contactoptions a {
+#contactAndTest #contactme #contactoptions a.contact {
   text-decoration: none;
+  align-items: center;
+  color: #fff;
 }
-#contactme #contactoptions .contacticon .value {
-  font-weight: 200;
+
+#contactAndTest #testimonials {
+  display: flex;
+  color: #fff;
+  width: 65%;
 }
-#contactme #contactoptions > *:hover i {
-  color: #fda4ba;
-  transition: 0.5s;
-  transform: scale(1.1);
+#contactAndTest #testimonials #left,
+#contactAndTest #testimonials #right {
+  display: flex;
+  flex-direction: column;
+  color: #22262a;
+  width: 50%;
+}
+#contactAndTest #testimonials .block {
+  position: relative;
+  padding: 3vh 2vh;
+}
+#contactAndTest #testimonials .block i {
+  margin-bottom: 1vh;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+#contactAndTest #testimonials .block .quote {
+  margin-top: 10%;
+}
+#contactAndTest #testimonials .block .contact {
+  font-weight: 400;
+  font-size: 1rem;
+}
+#contactAndTest #testimonials #left .block {
+  height: 100%;
+  font-size: 1.2rem;
+}
+#contactAndTest #testimonials #right .block {
+  height: 50%;
+}
+#contactAndTest #testimonials #left .block:nth-of-type(1) {
+  background-color: #fda4ba;
+  border-radius: 10px 0px 0px 10px;
+}
+#contactAndTest #testimonials #right .block:nth-of-type(1) {
+  background-color: #efefd0;
+  border-radius: 0px 10px 0px 0px;
+}
+#contactAndTest #testimonials #right .block:nth-of-type(2) {
+  background-color: #72ddf7;
+  border-radius: 0px 0px 10px 0px;
+  font-size: 1.1rem;
 }
 /***********************/
 /**** MEDIUM 1 SCREEN ****/
@@ -152,13 +205,20 @@
     clip-path: none;
     margin: 2vh auto;
   }
-  #contactme #contactoptions {
+  #contactAndTest {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #contactAndTest #contactme {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  #contactAndTest #contactme #contactoptions {
     flex-direction: column;
   }
-  #contactme #contactoptions #linkedin,
-  #contactme #contactoptions #github,
-  #contactme #contactoptions #facebook {
-    display: none;
+  #contactAndTest #testimonials {
+    width: 100%;
   }
 }
 /***********************/
@@ -166,10 +226,10 @@
 /***********************/
 @media screen and (max-width: 750px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   h3 {
     font-size: 1rem;
