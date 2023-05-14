@@ -133,24 +133,27 @@
   h1 {
     font-size: 1.5rem;
   }
-  h2 {
-    font-size: 1rem;
-  }
   h3 {
     font-size: 0.75rem;
   }
-  #main {
+  #aboutme {
     flex-direction: column;
   }
-  #main #aboutmeimage {
+  #aboutmeimage {
     min-height: 40vh;
     width: 50%;
-    margin: 3vh auto;
+    margin: 5vh auto 0vh;
     padding-top: 3vh;
     border-radius: 5px;
   }
   #aboutmetext {
     text-align: center;
+  }
+  #skills {
+    text-align: left;
+  }
+  #skills h2 {
+    margin-bottom: 2vh;
   }
   #summary {
     justify-content: center;
