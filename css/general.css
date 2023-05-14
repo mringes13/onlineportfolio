@@ -49,3 +49,9 @@ h2 {
     opacity: 1;
   }
 }
+
+@keyframes percentFill {
+  0% {
+    width: 0%;
+  }
+}
