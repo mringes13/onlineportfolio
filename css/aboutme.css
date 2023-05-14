@@ -4,60 +4,119 @@
 #main {
   color: #fff;
   background-color: rgb(74, 79, 75);
-  display: flex;
   align-items: stretch;
-  min-height: 90vh;
 }
-#main #aboutmeimage {
-  min-width: 55vw;
+#aboutme {
+  display: flex;
+  min-height: 75vh;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#aboutmeimage {
+  min-width: 35vw;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-image: url("../images/profile2.jpg");
   background-repeat: no-repeat;
 }
-#main #aboutmetext {
-  min-width: 45vw;
-  padding: 3vw 5vw 5vw 4vw;
+#aboutmetext {
+  align-self: center;
+  margin-top: 5vh;
+  margin-left: 3vw;
+  margin-right: 6vw;
 }
-#main #aboutmetext h2 {
+
+/* Skill Progress Bars */
+#skills {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.skill h6.language {
   margin-bottom: 0px;
 }
-#main #aboutmetext #hashtags {
+.meter {
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+  position: relative;
+  background: #555;
+  border-radius: 25px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #fda4ba;
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+.meter .percent {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  line-height: 20px; /* Should be same height as meter */
+  font-weight: 600;
+}
+
+#myjourney {
+  display: block;
+  margin: 7vh 5vw 0;
+  padding-bottom: 5vw;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#hashtags {
   color: lightgrey;
 }
-#main #aboutmetext #summary {
+/* Summary Includes Work and Education Labels */
+#summary {
   display: flex;
   margin-bottom: 20px;
-  justify-content: start;
+  justify-content: center;
 }
-#main #aboutmetext #summary div {
+#summary div {
   margin: 10px;
 }
-#main #aboutmetext #summary #work {
+#summary #work {
   margin-left: 0px;
 }
-#main #aboutmetext #summary div h5 {
+#summary div h5 {
   font-weight: 500;
   margin-bottom: 3px;
 }
-#main #aboutmetext #summary div h6 {
+#summary div h6 {
   font-weight: 300;
   margin-bottom: 2px;
   text-decoration: underline;
 }
-#main #aboutmetext #summary div p {
+#summary div p {
   margin-bottom: 0px;
   font-size: 0.8em;
 }
-#main #aboutmetext #contacticons {
+#contacticons {
   display: flex;
+  justify-content: center;
 }
-#main #aboutmetext #contacticons img {
+#contacticons img {
   width: 40px;
   margin: 0px 10px;
 }
-#main #aboutmetext #contacticons #first {
+#contacticons #first {
   margin-left: 0px;
 }
 
@@ -89,13 +148,13 @@
     padding-top: 3vh;
     border-radius: 5px;
   }
-  #main #aboutmetext {
+  #aboutmetext {
     text-align: center;
   }
-  #main #aboutmetext #summary {
+  #summary {
     justify-content: center;
   }
-  #main #aboutmetext #contacticons {
+  #contacticons {
     justify-content: center;
   }
 }
@@ -103,7 +162,7 @@
 /***** SMALL SCREEN *****/
 /************************/
 @media screen and (max-width: 440px) {
-  #main #aboutmeimage {
+  #aboutmeimage {
     width: 90%;
   }
 }

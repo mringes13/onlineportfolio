@@ -16,7 +16,8 @@ h2 {
   color: #ffffff !important;
 }
 #navigation a:hover {
-  transform: translateY(-3px);
+  transform: scale(1.1);
+  color: #fda4ba !important;
 }
 #navigation .collapse {
   justify-content: space-between;
@@ -35,4 +36,16 @@ h2 {
 }
 #footer a {
   color: #ffffff !important;
+}
+
+/* ---------------- */
+/*  ALL-ANIMATIONS  */
+/* ---------------- */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
